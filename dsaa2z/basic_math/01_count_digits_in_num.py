@@ -1,10 +1,14 @@
-def count_digits(n: int) -> int:
-    temp = n
-    digits_counter = 0
-    while temp > 0:
-        temp = temp // 10
-        digits_counter += 1
-    return digits_counter
+# length of a number
+num = 1547
 
-res = count_digits(n=5555)
-print(res)
+
+def count_len(n: int):
+    len = 0
+    while n > 0:
+        res = n // 10
+        len += 1
+        n = res
+    return len
+
+
+print(count_len(1234))
