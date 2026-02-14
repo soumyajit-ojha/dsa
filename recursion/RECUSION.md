@@ -1,7 +1,3 @@
-Here is a comprehensive guide to **Recursion**, a fundamental concept that unlocks complex algorithms like sorting, trees, and graphs.
-
----
-
 ### 1. What is Recursion?
 **Recursion** is a programming technique where a function calls **itself** to solve a problem. Instead of solving a big problem all at once, recursion breaks it down into smaller, self-similar sub-problems.
 
