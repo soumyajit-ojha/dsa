@@ -5,9 +5,9 @@ def bubble_sort(arr: list):
     n = len(arr)
     for i in range(n):  #   0 1 2 3 4
         is_sorted = False
-        for j in range(n-1-i): # 0 1 2 3 
-            if arr[j] > arr[j+1]:
-                arr[j], arr[j+1] = arr[j+1], arr[j]
+        for j in range(n - 1 - i):  # 0 1 2 3
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
             else:
                 is_sorted = True
         if is_sorted:
@@ -16,7 +16,7 @@ def bubble_sort(arr: list):
     return arr
 
 
-arr = [105, 3, 15, 11, 65]  
+arr = [105, 3, 15, 11, 65]
 res = bubble_sort(arr=arr)
 print(res)
 
