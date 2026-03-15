@@ -6,10 +6,13 @@ arr = [105, 3, 4, 11, 65]
 n = len(arr)
 for i in range(n):
     f_index = i
+    print("F index before:", f_index)
     for j in range(i + 1, n):
         if arr[f_index] > arr[j]:
             f_index = j
+        print("F index after:", f_index)
     arr[i], arr[f_index] = arr[f_index], arr[i]
+    print("Switched")
 
 
 print(arr)
