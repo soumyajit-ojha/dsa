@@ -51,7 +51,7 @@ else:
     print("Odd")
 
 """
-LINEAR TIME
+LINEAR TIME:
     - Denoted by O(n)
     - here the program execution time depends on the input size. It increase or decrease on input size.
     - if in program there is loop is used (not nested), one or more independent.
@@ -60,7 +60,66 @@ LINEAR TIME
 
 n = 10
 for i in range(10):
-    print(i+1)
+    print(i + 1)
+
+for i in range(n):
+    print(n * n)
+
+# for above 2 program time complexity is O(n).
+
+"""
+Quadratic Time:
+    - Denoted by O(n^2):
+    - The excution time of the program depends on time which is n * n (n is the input size.)
+    - In this type of program there is nested loops.
+    - bubble sort algorithm.
+"""
+
+n = 5
+for i in range(n):
+    for j in range(n):
+        print(j)  # time complexity of this program is o(n^2)
 
 
+"""
+Cubic Time:
+    - Denoted by O(n^3):
+    - The excution time of the program depends on time which is n * n * n(n is the input size.)
+    - In this type of program there is nested loops.
+"""
 
+n = 5
+for i in range(n):
+    for j in range(n):
+        for k in range(n):
+            print(j)  # time complexity of this program is o(n^2)
+
+"""
+Logarithmic Time Complexity:
+    - Denoted by O(log n)
+    - In this time complexity the program execute log n times.
+    - As long as program move ahead its no of excecution reduces.
+    - binary search algorithm.
+"""
+
+n = 10
+while n > 0:
+    print(n)
+    n = n // 2
+"""
+initial (n) ||  print(value)  || calculate (n)
+n = 10          10                  n = 5
+n = 10          5                   n = 2
+n = 2           2                   n = 1
+
+the value of n reduce by the form of if the no of loop is k times.
+n -> n/2^1 -> n/2^2 -> n/2^3 -> n/2^4 ..... n/2^k
+
+- At last the n/2^k = 1
+=> n/2^k = 1
+=> n = 2^k
+=> log n = log 2^k
+=> log n = k log 2
+=> (log n) / (log 2) = k ::: log 2 = constant value -> must ignored in time complexity
+=> k = log n
+"""
