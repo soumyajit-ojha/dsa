@@ -64,4 +64,12 @@ my_arr.remove(1000)
 print(my_arr)
 
 
-# 6.
+# 6.Indexig in array
+s1 = my_arr[2:5]
+print("SLiced array -", s1)
+s2 = my_arr[::-1]
+print("Reversed array (by slicing) -", s2)
+
+# 7. Index: get the index of element (if available)
+ind = my_arr.index(999)
+print("index of 999 is =", ind)
